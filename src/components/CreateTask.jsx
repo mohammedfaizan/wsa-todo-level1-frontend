@@ -45,8 +45,9 @@ const CreateTask = (props) => {
 
   const handleResponse = useCallback(
     function (responseData) {
-      if (responseData.status === "Created") {
+      if (responseData.success) {
         // Call fetch tasks API to redirect to task listing screen
+        console.log(responseData.success);
         fetchAllTasks();
       }
     },

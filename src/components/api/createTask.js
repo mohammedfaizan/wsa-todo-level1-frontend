@@ -4,7 +4,7 @@ async function createTaskAPI(values, handleResponse, handleError, setLoading) {
     const baseUrl = import.meta.env.VITE_APP_API_BASE_URL;
     const endpoint = "/task";
 
-    const url = new URL(endpoint, baseUrl);
+    const url = `${baseUrl}${endpoint}`;
 
     // Construct the request body with the values provided
     const requestBody = JSON.stringify({

@@ -1,4 +1,4 @@
-import CustomDatepicker from "./CustomDatePicker";
+import CustomDatepicker from "./CustomDatepicker.jsx";
 import clsx from "clsx";
 
 const InputField = ({
